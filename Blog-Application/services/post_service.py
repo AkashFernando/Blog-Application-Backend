@@ -1,4 +1,4 @@
-from ..repositories.post_repository import PostRepository
+from repositories.post_repository import PostRepository
 
 class PostService:
     def get_all_posts(self):

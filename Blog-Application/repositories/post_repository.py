@@ -1,5 +1,5 @@
-from ..models.post_model import Post
-from ..database import db
+from models.post_model import Post
+from database import db
 
 class PostRepository:
     @staticmethod
@@ -12,7 +12,7 @@ class PostRepository:
 
     @staticmethod
     def create(title, content):
-        post = Post(title=title, content=content)
+        post = Post(title=title, content=content,)
         db.session.add(post)
         db.session.commit()
         return post

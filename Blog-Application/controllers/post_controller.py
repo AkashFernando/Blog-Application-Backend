@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from ..services.post_service import PostService
+from services.post_service import PostService
 
 post_service = PostService()
 
